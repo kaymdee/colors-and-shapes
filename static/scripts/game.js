@@ -10,10 +10,12 @@ function randomItemPic(){
 
   let equalFlag = (item1Var == item2Var)
 
-  while not equalFlag:
+  while (equalFlag && True){
     item2Var = Math.floor(Math.random() * 6);
-    if item1Var != item2Var:
+    if (item1Var != item2Var){}
       equalFlag == True;
+    }
+  }
 
   if (item1Var == 0){
     item1Var = "../images/1.jpg";
