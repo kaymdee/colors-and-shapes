@@ -12,7 +12,7 @@ function randomItemPic(){
 
   while (equalFlag && True){
     item2Var = Math.floor(Math.random() * 6);
-    if (item1Var != item2Var){}
+    if (item1Var != item2Var){
       equalFlag == True;
     }
   }
