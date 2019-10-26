@@ -1,3 +1,3 @@
-class try2 {
-    Ignore this code
+public class try2 {
+   // Ignore this code
 }
