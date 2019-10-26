@@ -1,0 +1,3 @@
+class TamTest {
+  //ignore this
+}
