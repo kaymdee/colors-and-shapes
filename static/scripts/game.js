@@ -5,8 +5,8 @@ function randomItemPic(){
   let item1 = document.getElementById("item1");
   let item2 = document.getElementById("item2");
 
-  let item1Var = Math.floor(Math.random() * 6);
-  let item2Var = Math.floor(Math.random() * 6);
+  let item1Var = Math.floor(Math.random() * 7);
+  let item2Var = Math.floor(Math.random() * 7);
 
   console.log(item1Var);
   console.log(item2Var);
@@ -14,7 +14,7 @@ function randomItemPic(){
   let equalFlag = (item1Var == item2Var)
 
   while (equalFlag){
-    item2Var = Math.floor(Math.random() * 6);
+    item2Var = Math.floor(Math.random() * 7);
     if (item1Var != item2Var){
       equalFlag = false;
     }
@@ -39,6 +39,9 @@ function randomItemPic(){
   else if (item1Var == 5) {
     item1Var = "../static/images/6.png";
   }
+  else if (item1Var == 6) {
+    item1Var = "../static/images/7.jpg";
+  }
 
   if (item2Var == 0){
     item2Var = "../static/images/1.jpg";
@@ -57,6 +60,9 @@ function randomItemPic(){
   }
   else if (item2Var == 5) {
     item2Var = "../static/images/6.png";
+  }
+  else if (item1Var == 6) {
+    item1Var = "../static/images/7.jpg";
   }
 
   console.log(item1Var)
