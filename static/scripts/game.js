@@ -62,7 +62,7 @@ function randomItemPic(){
     item2Var = "../static/images/6.png";
   }
   else if (item1Var == 6) {
-    item1Var = "../static/images/7.jpg";
+    item2Var = "../static/images/7.jpg";
   }
 
   console.log(item1Var)
