@@ -5,55 +5,86 @@ function randomItemPic(){
   let item1 = document.getElementById("item1");
   let item2 = document.getElementById("item2");
 
-  let item1Var = Math.floor(Math.random() * 6);
-  let item2Var = Math.floor(Math.random() * 6);
+  let item1Var = Math.floor(Math.random() * 7);
+  let item2Var = Math.floor(Math.random() * 7);
+
+  console.log(item1Var);
+  console.log(item2Var);
 
   let equalFlag = (item1Var == item2Var)
 
-  while not equalFlag:
-    item2Var = Math.floor(Math.random() * 6);
-    if item1Var != item2Var:
-      equalFlag == True;
+  while (equalFlag){
+    item2Var = Math.floor(Math.random() * 7);
+    if (item1Var != item2Var){
+      equalFlag = false;
+      }
+    console.log(item2Var)
+    }
 
   if (item1Var == 0){
-    item1Var = "../images/1.jpg";
+    item1Var = "../static/images/1.jpg";
   }
   else if (item1Var == 1){
-    item1Var = "../images/2.jpg";
+    item1Var = "../static/images/2.jpg";
   }
   else if (item1Var == 2) {
-    item1Var = "../images/3.jpg";
+    item1Var = "../static/images/3.jpg";
   }
   else if (item1Var == 3) {
-    item1Var = "../images/png";
+    item1Var = "../static/images/4.png";
   }
   else if (item1Var == 4) {
-    item1Var = "../images/5.jpg";
+    item1Var = "../static/images/5.jpg";
   }
   else if (item1Var == 5) {
-    item1Var = "../images/6.png";
+    item1Var = "../static/images/6.png";
+  }
+  else if (item1Var == 6) {
+    item1Var = "../static/images/7.jpg";
   }
 
   if (item2Var == 0){
-    item2Var = "../images/1.jpg";
+    item2Var = "../static/images/1.jpg";
   }
   else if (item2Var == 1){
-    item2Var = "../images/2.jpg";
+    item2Var = "../static/images/2.jpg";
   }
   else if (item2Var == 2) {
-    item2Var = "../images/3.jpg";
+    item2Var = "../static/images/3.jpg";
   }
   else if (item2Var == 3) {
-    item2Var = "../images/4.png";
+    item2Var = "../static/images/4.png";
   }
   else if (item2Var == 4) {
-    item2Var = "../images/5.jpg";
+    item2Var = "../static/images/5.jpg";
   }
   else if (item2Var == 5) {
-    item2Var = "../images/6.png";
+    item2Var = "../static/images/6.png";
   }
+  else if (item1Var == 6) {
+    item2Var = "../static/images/7.jpg";
+  }
+
+  console.log(item1Var)
+  console.log(item2Var)
 
   item1.src = item1Var;
   item2.src = item2Var;
 
 };
+
+var a = 10;
+
+function counting(){
+  let counter = document.getElementById("counter");
+  // let count = Number(counter.innerHTML);
+  //
+  // count = Number(counter.innerHTML) + 1
+  // console.log(count)
+  //
+  //
+  // counter.innerHTML = count
+  // console.log(counter.innerHTML)
+    counter.innerHTML = 20;
+}
+// alert("Value of 'a' outside the function " + a);
