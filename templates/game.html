@@ -12,13 +12,27 @@
       <a id="about" href='/about'>About</a>
     </div>
     <button type="button" name="button" onclick="randomItemPic()">Start</button>
-    <div class="items-bar">
-      <div class="item1">
-        <img src="../static/images/1.jpg" id="item1">
+    <div class="top-half">
+      <div class="items-bar">
+        <div class="item">
+          <img src="../static/images/1.jpg" id="item1">
+        </div>
+        <div class="item" id="emptyItem"></div>
+        <div class="item">
+          <img src="../static/images/2.jpg" id="item2">
+        </div>
       </div>
-      <div class="itemEmpty" id="emptyItem"></div>
-      <div class="item2">
-        <img src="../static/images/2.jpg" id="item2">
+    </div>
+    <div class="bottom-half">
+      <div class="text-box">
+        <form action="" method="post">
+          <textarea name="" rows="8" cols="80"></textarea>
+          <input type="submit" name="" value="Submit" onclick="counting()">
+        </form>
+      </div>
+      <div class="counterClass">
+        <h1>Counter:</h1>
+        <h1 id="counter"></h1>
       </div>
     </div>
     <script src='../static/scripts/game.js'></script>

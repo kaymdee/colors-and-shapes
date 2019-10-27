@@ -1,0 +1,21 @@
+.items-bar, .bottom-half {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+};
+
+.item {
+  height: 800px;
+  width: 800px;
+  background-color: blue;
+}
+
+#emptyItem {
+  height: inherit;
+  width: 400px;
+}
+
+#item1, #item2 {
+  height: 250px;
+  width: inherit;
+}

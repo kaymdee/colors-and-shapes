@@ -17,9 +17,9 @@ function randomItemPic(){
     item2Var = Math.floor(Math.random() * 7);
     if (item1Var != item2Var){
       equalFlag = false;
-    }
+      }
     console.log(item2Var)
-  }
+    }
 
   if (item1Var == 0){
     item1Var = "../static/images/1.jpg";
@@ -72,3 +72,19 @@ function randomItemPic(){
   item2.src = item2Var;
 
 };
+
+var a = 10;
+
+function counting(){
+  let counter = document.getElementById("counter");
+  // let count = Number(counter.innerHTML);
+  //
+  // count = Number(counter.innerHTML) + 1
+  // console.log(count)
+  //
+  //
+  // counter.innerHTML = count
+  // console.log(counter.innerHTML)
+    counter.innerHTML = 20;
+}
+// alert("Value of 'a' outside the function " + a);
